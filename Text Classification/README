@@ -1,0 +1,13 @@
+== Whisper Coding Challange == 
+
+Thanks for your interest in Whisper.
+
+Whisper lets it's users explore Whispers by categories. These categories are automatically assigned to each Whisper using Machine Learning. For this challenge we'd like you to implement a similar model.
+
+We provide you with a dataset of Whispers, which are manually labeled with a category. The dataset is in csv format and utf8 encoded. We are providing you with a baseline model. We are asking you to experiment with potential improvements. Our model is implemented in Python making use of scikit-learn. You are free to use any other programming language or tool you are familiar with, however you'll need to reproduce our model in that environment yourself. The evaluation metric that we are using is the macro f1-score.
+
+You are free to try anything that you feel could potentially improve the performance. For instance: unsupervised preprecessing, manually engineerd features, different models, recurrent neural networks, word vectors, ensemble of models.
+
+Please provide us with the code for your experiments, even ones that failed. Document briefly what you are trying to do and why you think the experiment succeeded or failed. Make sure your code in clean and readable. We are not mainly evaluating you by the performance of your model, but we are trying to get an understanding about how you think. Be prepared to answer questions about your work, the problem at hand and evaluation.
+
+If you have any questions, please let us know.
