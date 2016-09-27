@@ -7,3 +7,4 @@
 2. Simple Random Walk Monte Carlo Simulation
 3. Art Acution Data Analysis
 4. MovieLens Data Analysis (Data Scientist Interview Challenge)
+5. LA Social Media Company (Data Scientist Coding Challenge)
