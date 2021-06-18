@@ -741,5 +741,39 @@ $ git checkout <feature>
 $ git push origin <feature>
 ```
 
+**Git Submodules**
 
-
+```
+# Clone
+$ git clone github@github.com:<user>/<repository>
+$ git submodule update --init --recursive
+# Fetch
+$ git fetch --all --recurse-submodules
+# Update submodules after checking out a branch on main module
+$ git checkout <branch>
+$ git submodule update --recursive --force
+# Status of all submodules and their revisions
+$ git submodule status --recursie
+# Remotes
+$ cd module_A
+$ git remote add upstream github@github.com:<user>/module_A.git
+$ cd module_B # <repository>/module_A/module_B
+$ git remote add upstream github@github.com:<user>/module_B.git
+# Commit: Branch of main module will be tied to particular revisions of its submodules, i.e. the submodules appear as detached HEAD revisions
+$ git checkout -b <feature-main>
+$ git submodule update --recursive
+$ cd module_A
+$ git checkout -b <feature-A>
+# modify/add files
+$ cd module_B
+$ git checkout -b <feature-B>
+# modify/add files
+$ git add module_B_changes
+$ git commit -m "Changes in module_B go first"
+$ cd ..
+$ git add module_A_changes
+$ git commit -m "Changes in module_A go next"
+$ cd ..
+$ git add main_changes
+$ git commit -m "Changes in main go last"
+```
